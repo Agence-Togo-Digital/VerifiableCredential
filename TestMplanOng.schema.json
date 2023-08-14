@@ -1,0 +1,165 @@
+{
+    "$schema": "http: //json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "TestMplanOng": {
+            "$ref": "#/definitions/TestMplanOng"
+        }
+    },
+    "required": [
+        "TestMplanOng"
+    ],
+    "title": "TestMplanOng",
+    "description": "Organisation non gouvernementale",
+    "definitions": {
+        "TestMplanOng": {
+            "$id": "#/properties/TestMplanOng",
+            "title": "TestMplanOng",
+            "description": "Mplan Organisation non gouvernementale",
+            "type": "object",
+            "properties": {
+                "nom": {
+                    "type": "string"
+                },
+                "accronyme": {
+                    "type": "string"
+                },
+                "dateDelivranceRecepisse": {
+                    "type": "string"
+                },
+                "numeroRecepisse": {
+                    "type": "string"
+                },
+                "siege": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "telephone": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "dateObtentionAttestation": {
+                    "type": "string"
+                },
+                "numeroAttestation": {
+                    "type": "string"
+                },
+                "ministre": {
+                    "type": "string"
+                },
+                "dateSignature": {
+                    "type": "string"
+                },
+                "nomSignataire": {
+                    "type": "string"
+                },
+                "fonctionSignataire": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "nom",
+                "dateDelivranceRecepisse",
+                "numeroRecepisse",
+                "siege",
+                "adresse",
+                "email",
+                "dateObtentionAttestation",
+                "numeroAttestation",
+                "ministre",
+                "dateSignature",
+                "nomSignataire",
+                "fonctionSignataire"
+            ]
+        }
+    },
+    "_osConfig": {
+        "enableLogin": true,
+        "indexFields": [
+            "numeroAttestation",
+            "email",
+            "numeroRecepisse"
+        ],
+        "uniqueIndexFields": [
+            "numeroRecepisse",
+            "email",
+            "numeroAttestation"
+        ],
+        "roles": [
+            "anonymous"
+        ],
+        "inviteRoles": [
+            "anonymous"
+        ],
+        "ownershipAttributes": [
+            {
+                "email": "/email",
+                "mobile": "/email",
+                "userId": "/numeroAttestation"
+            }
+        ],
+        "attestationAttributes": [
+            "nom",
+            "dateDelivranceRecepisse",
+            "numeroRecepisse",
+            "siege",
+            "adresse",
+            "dateObtentionAttestation",
+            "numeroAttestation",
+            "ministre",
+            "dateSignature",
+            "nomSignataire",
+            "fonctionSignataire"
+        ],
+        "attestationPolicies": [
+            {
+                "name": "TestMplanOngAttestation",
+                "attestationProperties": {
+                    "nom": "$.nom",
+                    "numeroRecepisse": "$.numeroRecepisse",
+                    "siege": "$.siege",
+                    "adresse": "$.adresse",
+                    "dateDelivranceRecepisse": "$.dateDelivranceRecepisse",
+                    "dateObtentionAttestation": "$.dateObtentionAttestation",
+                    "numeroAttestation": "$.numeroAttestation",
+                    "ministre": "$.ministre",
+                    "dateSignature": "$.dateSignature",
+                    "nomSignataire": "$.nomSignataire",
+                    "fonctionSignataire": "$.fonctionSignataire"
+                },
+                "type": "MANUAL",
+                "conditions": "true",
+                "attestorPlugin": "did:internal:ClaimPluginActor?entity=Mplan"
+            }
+        ],
+        "credentialTemplate": {
+            "@context": [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://raw.githubusercontent.com/Agence-Togo-Digital/VerifiableCredential/main/vcontexts/TestMplanOng.jsonld"
+            ],
+            "type": [
+                "VerifiableCredential"
+            ],
+            "issuanceDate": "2023-06-28T00:00:00Z",
+            "credentialSubject": {
+                "type": "TestMplanOng",
+                "nom": "{{nom}}",
+                "numeroRecepisse": "{{numeroRecepisse}}",
+                "siege": "{{siege}}",
+                "adresse": "{{adresse}}",
+                "dateDelivranceRecepisse": "{{dateDelivranceRecepisse}}",
+                "dateObtentionAttestation": "{{dateObtentionAttestation}}",
+                "numeroAttestation": "{{numeroAttestation}}",
+                "ministre": "{{ministre}}",
+                "dateSignature": "{{dateSignature}}",
+                "nomSignataire": "{{nomSignataire}}",
+                "fonctionSignataire": "{{fonctionSignataire}}"
+            },
+            "issuer": "did:web:digital.gouv.tg/vc/Testmplanong"
+        }
+    }
+}
