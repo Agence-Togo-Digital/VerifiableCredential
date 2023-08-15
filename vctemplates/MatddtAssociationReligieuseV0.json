@@ -78,7 +78,7 @@
             {
                 "path": "credentialSubject.rat",
                 "encoder": "string"
-            },
+            }
         ],
         "template": {
             "@context": [
