@@ -16,7 +16,10 @@
                 "nomRepresentant": "schema:name",
                 "adresseSocial": "schema:name",
                 "dateSignature": "schema:name",
-                "ministre": "schema:name"
+                "ministre": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
             }
         }
     }
