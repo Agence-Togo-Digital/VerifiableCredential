@@ -18,6 +18,7 @@
                 "dateRecepisse": "schema:name",
                 "ministre": "schema:name",
                 "dateSignature": "schema:name",
+                "email": "schema:name",
                 "cat": "schema:name",
                 "exp": "schema:name",
                 "rat": "schema:name"
