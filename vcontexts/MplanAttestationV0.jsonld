@@ -17,7 +17,7 @@
                 "adresse": "schema:name",
                 "dateRecepisse": "schema:name",
                 "ministre": "schema:name",
-                "dateSignature": "schema:name",
+                "dateSignature": "schema:name"
             }
         }
     }
