@@ -5,8 +5,8 @@
         "id": "@id",
         "type": "@type",
         "schema": "https://schema.org/",
-        "MplanOngV0": {
-            "@id": "schema:MplanOngV0",
+        "MplanAccordProgrammeV2": {
+            "@id": "schema:MplanAccordProgrammeV2",
             "@context": {
                 "@version": 1.1,
                 "@protected": true,
