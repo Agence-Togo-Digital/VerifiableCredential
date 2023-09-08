@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "MplanAccordProgrammeV2": {
+            "@id": "schema:MplanAccordProgrammeV2",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "nom": "schema:name",
+                "dateAttestation": "schema:name",
+                "siege": "schema:name",
+                "adresse": "schema:name",
+                "numeroAttestation": "schema:name",
+                "email": "schema:name",
+                "dateSignature": "schema:name",
+                "ministre": "schema:name",
+                "nomSignataire": "schema:name",
+                "fonctionSignataire": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
