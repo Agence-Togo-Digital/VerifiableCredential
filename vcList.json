@@ -33,5 +33,10 @@
         "template": "MplanAccordProgrammeV0",
         "name": "Mplan Accord Programme",
         "description": "Accord programme délivré"
+  },
+  {
+        "template": "SGGOrdreDeMissionV0",
+        "name": "SGG Ordre de mission",
+        "description": "Ordre de mission Sécrétariat général du gouvernement"
   }
 ]
