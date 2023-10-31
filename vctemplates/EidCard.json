@@ -1,0 +1,98 @@
+{
+    "sample:1": {
+        "columns": [
+            {
+                "path": "issuanceDate",
+                "encoder": "isodatetime-epoch-base32"
+            },
+            {
+                "path": "issuer",
+                "encoder": "string",
+                "prefix": [
+                    "did:web:172.17.0.1"
+                ]
+            },
+            {
+                "path": "id",
+                "encoder": "string"
+            },
+            {
+                "path": "proof.verificationMethod",
+                "encoder": "string",
+                "prefix": [
+                    "did:web:172.17.0.1"
+                ]
+            },
+            {
+                "path": "proof.proofValue",
+                "encoder": "multibase-base36"
+            },
+            {
+                "path": "proof.created",
+                "encoder": "isodatetime-epoch-base32"
+            },
+            {
+                "path": "credentialSubject.identifier",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.famillyName",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.givenName",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.gender",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.birthDate",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.email",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.telephone",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.image",
+                "encoder": "string"
+            }
+        ],
+        "template": {
+            "@context": [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/security/suites/ed25519-2020/v1",
+                "https://raw.githubusercontent.com/Agence-Togo-Digital/VerifiableCredential/main/vcontexts/EidCard.jsonld"
+            ],
+            "type": [
+                "VerifiableCredential"
+            ],
+            "credentialSubject": {
+                "@context": [
+                    "https://www.w3.org/2018/credentials/v1",
+                    "https://w3id.org/security/suites/ed25519-2020/v1",
+                    "https://raw.githubusercontent.com/Agence-Togo-Digital/VerifiableCredential/main/vcontexts/EidCard.jsonld"
+                ],
+                "type": "EidCard",
+                "identifier": "schema:name",
+                "famillyName": "schema:name",
+                "givenName": "schema:name",
+                "gender": "schema:name",
+                "birthDate": "schema:name",
+                "email": "schema:name",
+                "telephone": "schema:name",
+                "image": "schema:name"
+            },
+            "proof": {
+                "type": "Ed25519Signature2020",
+                "proofPurpose": "assertionMethod"
+            }
+        }
+    }
+}
