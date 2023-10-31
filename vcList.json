@@ -46,5 +46,11 @@
         "name": "SGG Ordre de mission",
         "description": "Ordre de mission Sécrétariat général du gouvernement",
         "source": "jxt"
+  },
+  {
+        "template": "EidCard",
+        "name": "EidCard",
+        "description": "Electronic Identifier Card",
+        "source": "jxt"
   }
 ]
