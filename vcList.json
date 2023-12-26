@@ -55,8 +55,21 @@
   },
   {
         "template": "AnacDroneAutorisationV1",
-        "name": "ANAC - Drone demande d'autorisation",
+        "name": "ANAC - Drone demande d'autorisation V1",
         "description": "ANAC - Demande d'autorisation pour un drone",
+        "source": "jxt"
+  },
+
+  {
+        "template": "AnacDroneAutorisationV2",
+        "name": "ANAC - Drone demande d'autorisation V2",
+        "description": "ANAC - Demande d'autorisation pour un drone",
+        "source": "jxt"
+  },
+  {
+        "template": "AnacDroneDeclarationV0",
+        "name": "ANAC - Drone Déclaration",
+        "description": "ANAC - Déclaration de drone",
         "source": "jxt"
   }
 ]
