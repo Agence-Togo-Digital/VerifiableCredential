@@ -60,7 +60,7 @@
                 "encoder": "string"
             },
             {
-                "path": "credentialSubject.id",
+                "path": "credentialSubject.idDossier",
                 "encoder": "string"
             },
             {
