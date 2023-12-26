@@ -13,6 +13,7 @@
                 "nom": "schema:name",
                 "prenom": "schema:name",
                 "numeroAutorisationExpedition": "schema:name",
+                "numeroIdentificationExploitantDrone": "schema:name",
                 "dateExpiration": "schema:name",
                 "dateDelivrance": "schema:name",
                 "nomSignataire": "schema:name",
