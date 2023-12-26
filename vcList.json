@@ -52,5 +52,11 @@
         "name": "EidCard",
         "description": "Electronic Identifier Card",
         "source": "jxt"
+  },
+  {
+        "template": "AnacDroneAutorisationV1",
+        "name": "ANAC - Drone demande d'autorisation",
+        "description": "ANAC - Demande d'autorisation pour un drone",
+        "source": "jxt"
   }
 ]
