@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "AnacDroneAutorisationV1": {
+            "@id": "schema:AnacDroneAutorisationV1",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "nom": "schema:name",
+                "prenom": "schema:name",
+                "numeroAutorisationExpedition": "schema:name",
+                "dateExpiration": "schema:name",
+                "dateDelivrance": "schema:name",
+                "nomSignataire": "schema:name",
+                "fonctionSignataire": "schema:name",
+                "idDossier": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
