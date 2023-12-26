@@ -5,8 +5,8 @@
         "id": "@id",
         "type": "@type",
         "schema": "https://schema.org/",
-        "AnacDroneAutorisationV1": {
-            "@id": "schema:AnacDroneAutorisationV1",
+        "AnacDroneAutorisationV2": {
+            "@id": "schema:AnacDroneAutorisationV2",
             "@context": {
                 "@version": 1.1,
                 "@protected": true,
