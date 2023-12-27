@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "MinarmUtilisationDroneV0": {
+            "@id": "schema:MinarmUtilisationDroneV0",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "nom": "schema:name",
+                "prenom": "schema:name",
+                "dateLettre": "schema:name",
+                "idDossier": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
