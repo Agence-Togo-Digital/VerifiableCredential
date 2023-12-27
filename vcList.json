@@ -71,5 +71,17 @@
         "name": "ANAC - Drone Déclaration",
         "description": "ANAC - Déclaration de drone",
         "source": "jxt"
+  },
+  {
+        "template": "MspcImportationDroneV0",
+        "name": "MSPC - Importation de drone",
+        "description": "MSPC - Importation de drone",
+        "source": "jxt"
+  },
+  {
+        "template": "MinarmUtilisationDroneV0",
+        "name": "MINARM - Utilisation de drone",
+        "description": "MINARM - Utilisation de drone",
+        "source": "jxt"
   }
 ]
