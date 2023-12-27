@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "MspcImportationDroneV0": {
+            "@id": "schema:MspcImportationDroneV0",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "nom": "schema:name",
+                "prenom": "schema:name",
+                "pays",
+                "types": "schema:name",
+                "motif": "schema:name",
+                "date": "schema:name",
+                "ministre": "schema:name",
+                "lettre": "schema:name",
+                "dateLettre": "schema:name",
+                "autorisation": "schema:name",
+                "idDossier": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
