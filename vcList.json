@@ -89,5 +89,11 @@
         "name": "MINARM - Utilisation de drone",
         "description": "MINARM - Utilisation de drone",
         "source": "jxt"
+  },
+  {
+        "template": "MatddtDadlRecepisseV0",
+        "name": "MATDDT - DADL Recepissé dépôt légal",
+        "description": "Dépôt légal de récépissé au DADL",
+        "source": "jxt"
   }
 ]
