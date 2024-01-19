@@ -1,0 +1,28 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "MatddtDadlRecepisseV0": {
+            "@id": "schema:MatddtDadlRecepisseV0",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "nom": "schema:name",
+                "numeroRecepisse": "schema:name",
+                "titreOeuvre": "schema:name",
+                "typeOeuvre": "schema:name",
+                "numeroDepotLegal": "schema:name",
+                "numeroSuivi": "schema:name",
+                "declarant": "schema:name",
+                "auteur": "schema:name",
+                "dateSignature": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
