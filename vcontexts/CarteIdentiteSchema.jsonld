@@ -1,23 +1,22 @@
 {
-"@context": {
-"@version": 1.1,
-"@protected": true,
-"id": "@id",
-"type": "@type",
-"schema": "https://schema.org/",
-"CarteIdentiteSchema": {
-"@id": "schema:CarteIdentiteSchema",
-"@context": {
-"@version": 1.1,
-"@protected": true,
-"nomComplet": "schema:name",
-"id": "schema:name",
-"numeroDeLaCarte": "schema:name",
-"telephone": "schema:name",
-"cat": "schema:name",
-"exp": "schema:name",
-"rat": "schema:name"
-}
-}
-}
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "schema": "https://schema.org/",
+    "CarteIdentiteSchema": {
+      "@id": "schema:CarteIdentiteSchema",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "nomComplet": "schema:name",
+        "numeroDeLaCarte": "schema:name",
+        "telephone": "schema:name",
+        "cat": "schema:name",
+        "exp": "schema:name",
+        "rat": "schema:name"
+      }
+    }
+  }
 }
