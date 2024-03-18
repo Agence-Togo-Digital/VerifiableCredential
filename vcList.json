@@ -95,5 +95,11 @@
         "name": "MATDDT - DADL Recepissé dépôt légal",
         "description": "Dépôt légal de récépissé au DADL",
         "source": "jxt"
-  }
+  },
+  {
+        "template": "CarteIdentiteSchema",
+        "name": "Test sandbox - Carte d'identité",
+        "description": "Test carte d'identité",
+        "source": "jxt"
+  },
 ]
