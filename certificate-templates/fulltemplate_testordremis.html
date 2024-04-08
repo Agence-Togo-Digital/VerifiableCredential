@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordre de Mission</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+        @media screen,
+        print {
+
+            .valeur {
+                padding: 0px;
+                text-align: justify;
+            }
+
+            .footer {
+                text-align: left;
+                width: 100%;
+                margin-top: auto;
+                page-break-after: always;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+                line-height: 19px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                /* border: 1px solid red; */
+                justify-content: space-between;
+            }
+
+            .page {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 0.5cm;
+                margin-top: 1cm;
+                padding: 2% 50px;
+                width: 21cm;
+                height: 28.7cm;
+                position: relative;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+                page-break-before: always;
+            }
+
+            .entities {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+
+            .code_qr img {
+                /* width: 5cm;
+                height: 5cm; */
+                margin: 15px auto;
+            }
+
+            .line {
+                width: 40%;
+                height: 0px;
+                margin: 0px auto;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+
+            .document-title {
+                align-self: center;
+                text-align: center;
+            }
+
+            .content {
+                margin: 0 auto;
+            }
+
+            .content table {
+                padding-left: 40px;
+                font-size: 15px;
+            }
+
+            td {
+                padding: 4px;
+            }
+
+            .centered {
+                text-align: center;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            .content p {
+                margin: 10px 0;
+            }
+
+            .content strong {
+                margin-right: 10px;
+            }
+
+            .delivre {
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            .content p.signature {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .content p.signature strong:first-child {
+                text-decoration: underline;
+                margin-right: 0;
+            }
+
+            .content p.signature strong::after {
+                content: none;
+            }
+
+            .align-vert {
+                vertical-align: middle;
+            }
+
+            .signature {
+                margin-top: 10px;
+                display: flex;
+                line-height: 19px;
+                justify-content: space-between;
+            }
+
+            .signature .left {
+                margin-left: 10%;
+                flex: 1;
+                text-align: left;
+            }
+
+            .signature .right {
+                margin-right: 5%;
+                flex: 1;
+                text-align: center;
+            }
+
+            table tbody tr {
+                line-height: 16px;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container page">
+        <div class="header">
+            <div class="entities">
+                <div class="left">
+                    <h4>LE PREMIER MINISTRE</h4>
+                    <hr class="line" />
+                    <p>SECRETARIAT GENERAL <br>DU GOUVERNEMENT </p>
+                    <hr class="line" />
+                </div>
+                <div class="right">
+                    <h4>REPUBLIQUE TOGOLAISE</h4>
+                    <h4 class="centered">Travail-Liberté-Patrie</h4>
+                    <hr class="line" />
+                    <div class="code_qr">
+                        <img src="data:image/png;base64,{{qr_code}}" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+            <div class="document-title">
+                <div class="delivre" >
+                    <strong> ORDRE DE MISSION N° <u>{{numero_ordre}}</u>/PM/SGG
+                        <br>
+                        MISSION A EFFECTUER À {{lieu_mission}}
+                   </strong>
+                    </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <table style="width: 100%; word-wrap: break-word;">
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Nom et prénoms</td>
+                    <td> : </td>
+                    <td> <span class="valeur">{{nom}} {{prenoms}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Fonction </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{fonction}}</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Ministère </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{ministere}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Références </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{reference}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Groupe </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{groupe}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Lieu de la mission </td>
+                    <td> :</td>
+                    <td><span class="valeur">{{lieumission}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Objet de la mission </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{objet_mission}}</span> </td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Itinéraire retenu </td>
+                    <td> : </td>
+                    <td><span class="valeur">{{itineraire}}</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 45%; padding-left: 10%;">Durée probable de la mission </td>
+                    <td> : </td>
+                    <td ><span class="valeur">{{duree_mission}} {{#if status}}
+                            ({{type_demande}}) {{else}} {{#if issansfrais}} {{else}} (dont {{nbjours}} jours avec
+                            frais){{/if}}{{/if}} {{iswithnuitee}}</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 40%; padding-left: 10%;">Date de départ prévu </td>
+                    <td> : </td>
+                    <td ><span class="valeur">{{date_heure_depart}}</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 40%; padding-left: 10%;">Date de retour prévu </td>
+                    <td> : </td>
+                    <td ><span class="valeur">{{date_heure_retour}}</span> </td>
+                </tr>
+        </table>
+    
+
+            <div class="delivre">
+                <strong>DELIVRE PAR NOUS, PREMIER MINISTRE <br> DE LA REPUBLIQUE TOGOLAISE</strong>
+            </div>
+            <div class="signature">
+                <div class="left">
+                    <strong> <u>Signature du titulaire <br> de l'ordre de mission</u></strong>
+                </div>
+                <div class="right">
+                    Lomé, le <u>{{today_date}}</u>
+                    <p>Pour le Premier Ministre et par délégation</p>
+                    <p>{{poste_du_signataire}}</p>
+                </div>
+            </div>
+
+            <div class="signature">
+                <div class="left" style="margin-bottom: 70px !important;">
+                    <strong>Visa du Ministre</strong>
+                </div>
+                <div class="right" style="margin-top: 30px !important;">
+                    <strong>{{fullname_signataire}}</strong>
+                </div>
+            </div>
+        </div>
+        <h5 class="footer"><u>N.B</u> : {{#if (egale fonction "Présidence")}} À retourner au Secrétariat Général du
+            Gouvernement dès mission terminée. {{else}} À conserver par le Ministère demandeur (DAF) dès mission
+            terminée. {{/if}}</h5>
+    </div>
+</body>
+
+</html>
