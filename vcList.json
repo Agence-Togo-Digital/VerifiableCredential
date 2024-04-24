@@ -103,7 +103,7 @@
         "source": "jxt"
   },
   {
-        "template": "FactureEauSchemaV0",
+        "template": "FactureEauGireSchemaV0",
         "name": "Test sandbox - Facture eau fond gire",
         "description": "Facture eau gire",
         "source": "jxt",
